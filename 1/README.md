@@ -55,15 +55,21 @@ class Box(QDialog):
 
 原生的标题栏是系统的，我们很难去定制，在算在原生的cocoa或win32下定制也非常麻烦，解决办法是直接隐藏算系统的，我们自己在窗体中加一个我们自义的标题栏
 
-   * 去掉标题栏
-   ``` self.setWindowFlags(Qt.FramelessWindowHint ) ```
-   运行后发现，标题栏是去掉了，但窗口也不能进行拖动了。
+* 去掉标题栏
 
-   * 加入自定义拖动消息
-   重载 **mouseMoveEvent** **mousePressEvent** **mouseReleaseEvent** 来定义鼠标拖动时拉动窗口
+  ``` 
+  self.setWindowFlags(Qt.FramelessWindowHint ) 
+  ```
 
-   * 自己定义标题栏
-   这里没找到相应素材，找到再补，囧。。
+ 运行后发现，标题栏是去掉了，但窗口也不能进行拖动了。
+
+* 加入自定义拖动消息
+
+ 重载 **mouseMoveEvent** **mousePressEvent** **mouseReleaseEvent** 来定义鼠标拖动时拉动窗口
+
+* 自己定义标题栏
+
+ 这里没找到相应素材，找到再补，囧。。
 
 #### 3. 塞点自定义小图标点缀一下
 
@@ -81,6 +87,7 @@ class Box(QDialog):
     ```
 
 * 编译qrc为python文件
+
     ```
     pyrcc5 res.qrc -o res.py
     ```
@@ -88,9 +95,9 @@ class Box(QDialog):
 * 在程序中使用图标
     个人喜欢使用css的方式，如下
 
-  ``` 
-  edit_icon.setStyleSheet("background: url(:/images/edit-icon);") 
-  ```
+    ``` 
+    edit_icon.setStyleSheet("background: url(:/images/edit-icon);") 
+    ```
   
 #### 4. 输入框美化
 
