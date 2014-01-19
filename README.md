@@ -60,5 +60,5 @@ http://pyqt.sourceforge.net/Docs/PyQt5/installation.html
 >>> import PyQt5
 ```
 
-[1]: http://hhuai.github.io/blog/2015/01/18/learning-qt-1/
-[2]: http://hhuai.github.io/blog/2015/01/18/learning-qt-2/
+[1]: https://github.com/hhuai/qt-learning/tree/master/1
+[2]: https://github.com/hhuai/qt-learning/tree/master/2
