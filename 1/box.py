@@ -18,7 +18,6 @@ class Box(QDialog):
         self.dPos = None
         self.startMove = None
 
-
     def _initUi(self):
         self.resize(250, 150)
         self.move(300, 300)
